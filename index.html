@@ -1,30 +1,35 @@
-<html lang="en">
+<html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
-
+    <script src='logic.js' defer></script>
+    <link rel='stylesheet' type='text/css' href='style.css'>
 </head>
 
 <body>
-    <h1>Acme Pixels</h1>
-    <div class='content-wrapper'>
-        <div class='controls-wrapper'>
+    <h1>
+        Acme Pixels
+    </h1>
+    <main>
+        <div class='controlsWindow'>
             <h2>Controls</h2>
-            <table class='color-pal'>
-            </table>
-            <form class='grid-generator'>
-                <input name='height' placeholder='height' />
-                <input name='width' placeholder='width' />
-                <button>Create Grid</button>
+            <div id='colorBoard'>
+
+            </div>
+            <form>
+                <input id='height' name='height' placeholder="height">
+                <input id='width' name='width' placeholder="width">
+                <button id='create'>Create Grid</button>
             </form>
         </div>
 
-        <div class='grid-wrapper'>
+        <div class='gridWindow'>
             <h2>Grid</h2>
-            <table class='grid-board'></table>
+            <div id='board'>
+
+            </div>
         </div>
-    </div>
+    </main>
 </body>
-<script src='logic.js'></script>
+
 
 </html>

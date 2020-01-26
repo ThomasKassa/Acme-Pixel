@@ -1,45 +1,64 @@
-  .content-wrapper {
-      display: flex;
-      height: calc(100vh - 100px);
-  }
-  
-  .content-wrapper>div {
-      flex: 1;
-      border: solid 1px black;
-  }
-  
-  .color-pal {
-      display: flex;
-      flex-wrap: wrap;
-  }
-  
-  .color-pal>div {
-      width: 1rem;
-      height: 1rem;
-      border: solid 1px black;
-  }
-  
-  form {
-      display: flex;
-      flex-direction: column;
-      border: 1px solid black;
-      justify-content: center;
-      margin: 1rem;
-  }
-  
-  input,
-  button {
-      display: flex;
-      margin: 1rem 5rem;
-      height: 20px;
-  }
-  
-  .controls-wrapper {
-      border: 1px solid black;
-      flex: 1;
-  }
-  
-  .grid-wrapper {
-      border: 1px solid black;
-      flex: 2;
-  }
+main {
+    display: flex;
+}
+
+main>div {
+    /* margin: 1rem; */
+    padding: 1rem;
+}
+
+form {
+    border: 1px solid black;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+}
+
+input,
+button {
+    display: flex;
+    margin: 1rem;
+    /* width: auto;     */
+    flex: 1;
+}
+
+.selected {
+    border-color: white;
+}
+
+#board {
+    border: 1px solid black;
+}
+
+.cell {
+    border: 1px solid black;
+    height: 1rem;
+}
+
+.controlsWindow {
+    border: 1px solid black;
+    flex: 1;
+    padding: 1rem;
+}
+
+.controlsWindow>div {
+    margin: 1rem;
+}
+
+.gridWindow {
+    border: 1px solid black;
+    flex: 2;
+}
+
+#colorBoard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#colorBoard>div {
+    height: 10px;
+    width: 10px;
+    border: solid 1px black;
+    /* flex: 1; */
+    /* padding 0; */
+}
